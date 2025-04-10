@@ -1,0 +1,92 @@
+.contactForm {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertikale Zentrierung */
+  min-height: 100vh; /* Nimmt die volle Höhe des Bildschirms ein */
+}
+
+form {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Maximalbreite für größere Bildschirme */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive für kleine Bildschirme */
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 30px 10px; /* Weniger Abstand an den Rändern */
+  }
+
+  form {
+    width: 90%; /* Formular nutzt mehr Platz auf kleineren Bildschirmen */
+    margin: 0 auto; /* Automatischer Abstand, damit das Formular in der Mitte bleibt */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Kleinere Überschrift auf mobilen Geräten */
+  }
+
+  p {
+    font-size: 1rem; /* Kleinere Schrift für den Text */
+  }
+
+  form input,
+  form textarea {
+    padding: 10px; /* Weniger Padding auf mobilen Geräten */
+  }
+
+  form button {
+    padding: 12px; /* Weniger Padding für den Button */
+    font-size: 1rem; /* Kleinere Schrift für den Button */
+  }
+}

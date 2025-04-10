@@ -1,0 +1,30 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 30%; /* Auf größeren Bildschirmen 30% der Breite */
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Media query für mobile Ansicht */
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Auf mobilen Geräten 80% der Breite */
+    margin: 10px 0; /* Weniger Abstand zwischen den Karten */
+  }
+}
