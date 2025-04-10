@@ -10,17 +10,17 @@ const Services: React.FC = () => {
         <Card
           title="Pintura de Paredes"
           description="Realizamos trabajos de pintura en interiores de viviendas. Elige tus colores favoritos para renovar tu hogar."
-          image="https://via.placeholder.com/300x200"
+          image="https://cdn.pixabay.com/photo/2015/12/07/10/59/building-1080594_640.jpg"
         />
         <Card
           title="Cambio de Enchufes y Lámparas"
           description="Reemplazamos enchufes, interruptores y lámparas con total seguridad y profesionalismo."
-          image="https://via.placeholder.com/300x200"
+          image="https://cdn.pixabay.com/photo/2015/12/07/10/49/electrician-1080554_640.jpg"
         />
         <Card
           title="Pequeños Trabajos en el Jardín"
           description="Ofrecemos mantenimiento y reparación de jardines, incluyendo poda, siembra y otros trabajos de jardinería."
-          image="https://via.placeholder.com/300x200"
+          image="https://cdn.pixabay.com/photo/2017/03/27/11/57/garden-2178234_640.jpg"
         />
       </div>
     </section>
