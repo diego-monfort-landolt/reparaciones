@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 .hero {
   position: relative;
   width: 100%;
@@ -17,7 +16,6 @@
   padding: 0 20px;
   overflow: hidden;
 }
-
 .hero::after {
   content: "";
   position: absolute;
@@ -25,7 +23,6 @@
   background-color: rgba(0, 0, 0, 0.4); /* Dunkles Overlay */
   z-index: 1;
 }
-
 .hero > div {
   position: relative;
   z-index: 2;
@@ -34,19 +31,16 @@
   width: 100%;
   margin: 0 auto;
 }
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   word-wrap: break-word;
 }
-
 .hero p {
   font-size: 1.5rem;
   color: white;
   margin-bottom: 20px;
 }
-
 /* Button Styling */
 button {
   padding: 12px 25px;
@@ -59,32 +53,26 @@ button {
   transition: background-color 0.3s ease;
   font-size: 1.1rem;
 }
-
 button:hover {
   background-color: #0056b3;
 }
-
 button a {
   text-decoration: none;
   color: white;
   display: block;
 }
-
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
   .hero {
     padding: 40px 20px;
     min-height: auto;
   }
-
   .hero h1 {
     font-size: 2rem;
   }
-
   .hero p {
     font-size: 1.2rem;
   }
-
   button {
     font-size: 1rem;
     padding: 10px 20px;
