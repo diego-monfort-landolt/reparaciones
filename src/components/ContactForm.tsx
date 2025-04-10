@@ -23,5 +23,4 @@ const ContactForm: React.FC = () => {
     </section>
   );
 }
-
 export default ContactForm;
