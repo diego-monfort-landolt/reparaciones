@@ -25,5 +25,4 @@ React + TypeScript
 
 Vite
 
-CSS Modules
-
+CSS 
