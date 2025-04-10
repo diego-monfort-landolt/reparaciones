@@ -2,14 +2,12 @@
   padding: 50px 20px;
   text-align: center;
 }
-
 .cardsContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px; /* Abstand zwischen den Karten */
 }
-
 @media (max-width: 768px) {
   .cardsContainer {
     flex-direction: column;
