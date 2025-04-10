@@ -6,7 +6,6 @@ interface CardProps {
   description: string;
   image: string;
 }
-
 const Card: React.FC<CardProps> = ({ title, description, image }) => {
   return (
     <div className={styles.card}>
@@ -16,5 +15,4 @@ const Card: React.FC<CardProps> = ({ title, description, image }) => {
     </div>
   );
 }
-
 export default Card;
