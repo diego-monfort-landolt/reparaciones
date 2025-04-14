@@ -53,6 +53,29 @@ form button {
 form button:hover {
   background-color: #0056b3;
 }
+ /* notification */
+.notification {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.success {
+  background-color: #4caf50; /* Grün */
+}
+
+.error {
+  background-color: #f44336; /* Rot */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* Responsive für kleine Bildschirme */
 @media (max-width: 768px) {
   .contactForm {
