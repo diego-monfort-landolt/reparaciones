@@ -15,13 +15,11 @@ const ContactForm: React.FC = () => {
       window.location.href = mailtoLink;
 
       setNotification({ type: 'success', message: 'Correo preparado correctamente. Revisa tu cliente de correo.' });
-
       // Optional: Reset Formular
       form.reset();
-    } catch (error) {
+    } catch {
       setNotification({ type: 'error', message: 'Ocurrió un error al preparar el correo.' });
     }
-
     // Automatisch nach ein paar Sekunden ausblenden
     setTimeout(() => {
       setNotification(null);
@@ -55,5 +53,4 @@ const ContactForm: React.FC = () => {
     </section>
   );
 };
-
 export default ContactForm;

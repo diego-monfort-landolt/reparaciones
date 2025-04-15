@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center; /* Vertikale Zentrierung */
   min-height: 100vh; /* Nimmt die volle Höhe des Bildschirms ein */
+  position: relative;
 }
 form {
   background-color: white;
@@ -54,12 +55,17 @@ form button:hover {
   background-color: #0056b3;
 }
  /* notification */
-.notification {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 4px;
+ .notification {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  border-radius: 5px;
   color: white;
   font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -72,10 +78,15 @@ form button:hover {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }
-
 /* Responsive für kleine Bildschirme */
 @media (max-width: 768px) {
   .contactForm {
