@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../styles/Services.module.css';
 import Card from './Card';
-
 const Services: React.FC = () => {
+  // Define the velocity variable with a default value
+
   return (
     <section id="servicios" className={styles.services}>
       <h2>Servicios que Ofrecemos</h2>
